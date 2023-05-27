@@ -1,20 +1,23 @@
 /*
  * VQuarkMessage.h (2023/5.21)
- * 	 The message system in the VQuark	
+ * 	 The message system in the VQuark
  *
  *
  * Copyright (C) 2023~now Margoo
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of this softwareand associated documentation files(the "Software"),
- * to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and /or sell copies of the Software,
- * and to permit persons to whom the Software is furnished to do so, subject to the following conditions :
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this softwareand associated
+ * documentation files(the "Software"), to deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and /or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to the following conditions :
  *
- * The above copyright noticeand this permission notice shall be included in all copies or substantial portions of the Software.
+ * The above copyright noticeand this permission notice shall be included in all copies or substantial portions of the
+ * Software.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
- * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
 
 #pragma once
 
@@ -127,16 +130,16 @@ public:
 	VRect DirtyRectangle;
 
 public:
-	explicit VRepaintMessage(HWND TriggerWidget, const VRect& RepaintRegion);
+	explicit VRepaintMessage(HWND TriggerWidget, const VRect &RepaintRegion);
 };
 
 class VGetRepaintAeraMessage : public VMessage
 {
 public:
-	VRect* RepaintAera;
+	VRect *RepaintAera;
 
 public:
-	explicit VGetRepaintAeraMessage(HWND TriggerWidget, VRect& RepaintRegion);
+	explicit VGetRepaintAeraMessage(HWND TriggerWidget, VRect &RepaintRegion);
 	~VGetRepaintAeraMessage();
 };
 
@@ -153,12 +156,12 @@ class VCheckFocusMessage : public VMessage
 {
 public:
 	VPoint FocusPoint;
-	void* Object;
+	void  *Object;
 	bool   Click;
 
 public:
-	explicit VCheckFocusMessage(HWND TriggerWidget, const VPoint& Point, void* MessageObject,
-		const bool& MouseClick = false);
+	explicit VCheckFocusMessage(HWND TriggerWidget, const VPoint &Point, void *MessageObject,
+								const bool &MouseClick = false);
 };
 
 class VKillFocusMessage : public VMessage
