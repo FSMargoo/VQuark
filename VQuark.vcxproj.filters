@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{314d0fb0-481f-45a1-bf79-ec5219340ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{e35be379-9c91-42c7-8061-04965428cd24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="src\VQuarkBase.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VQuarkWidget.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VQuarkString.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VQuarkFmt.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VQuarkMessage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VQuarkData.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VQuarkSys.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VQuarkSignal.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\VQuarkBase.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\VQuarkWidget.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\VQuarkString.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\VQuarkFmt.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\VQuarkMessage.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\VQuarkData.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\VQuarkSys.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\VQuarkSignal.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
